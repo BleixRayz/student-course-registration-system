@@ -1,0 +1,12 @@
+runtime: nodejs18
+
+env: standard
+
+env_variables:
+  DATABASE_URL: "postgresql://user:password@localhost:5432/course_registration"
+  JWT_SECRET: "your_jwt_secret_key"
+  NODE_ENV: "production"
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10

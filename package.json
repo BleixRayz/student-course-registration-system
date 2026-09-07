@@ -1,15 +1,19 @@
 {
   "name": "student-course-registration-system",
   "version": "1.0.0",
-  "description": "Web-based student course registration system",
+  "description": "Student Course Registration System - Full Stack",
   "main": "server/index.js",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm run build && cd ../server && npm install",
     "start": "node server/index.js",
-    "deploy": "npm run build && git push heroku main"
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
   },
   "dependencies": {
     "concurrently": "^7.6.0"
