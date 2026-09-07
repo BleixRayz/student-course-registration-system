@@ -1,4 +1,4 @@
-# Student Course Registration System
+# <span style="color: green;">Kampala International University</span> Student Course Registration System
 
 A comprehensive web-based platform for managing student course registrations with secure authentication, course management, and administrative features.
 
@@ -32,7 +32,7 @@ A comprehensive web-based platform for managing student course registrations wit
 ```
 ├── client/                 # React frontend
 │   ├── src/
-│   │   ├── components/
+│   │   ��── components/
 │   │   ├── pages/
 │   │   ├── services/
 │   │   └── App.js
