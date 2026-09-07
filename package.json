@@ -1,0 +1,18 @@
+{
+  "name": "student-course-registration-system",
+  "version": "1.0.0",
+  "description": "Web-based student course registration system",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "deploy": "npm run build && git push heroku main"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {}
+}
